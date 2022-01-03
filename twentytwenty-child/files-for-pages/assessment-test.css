@@ -1,0 +1,100 @@
+/* employment application page style */
+
+
+.assessment-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.assessment-block {
+    -ms-flex-preferred-size: 49%;
+        flex-basis: 49%;
+    max-width: 49%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 25px;
+}
+
+@media (max-width: 800px) {
+    .assessment-block {
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+        max-width: 100%;
+    }
+} 
+
+.assessment-block.completed {
+	background-color: rgba(0,126,65,.2);
+}
+
+.assessment-block:nth-child(odd) {
+    margin-right: 15px;
+}
+
+.assessment-block .assessment-check {
+    padding: 0;
+    margin: 0 6px;
+}
+
+.assessment-block p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.assessment-block p span {
+    font-size: 20px;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+
+.assessment-block .assessment-check svg {
+	width: 40px;
+	height: 40px;
+    max-width: 40px;
+}
+.assessment-block .assessment-check.green svg,
+.assessment-block .assessment-check.green svg #Path_1,
+.assessment-block .assessment-check.green svg #Line_1 {
+	fill: #007E41;
+}
+.assessment-block .assessment-check.green ~ span {
+	font-weight: 700;
+}
+.assessment-block .assessment-check.red svg,
+.assessment-block .assessment-check.red svg #Path_1,
+.assessment-block .assessment-check.red svg #Line_1 {
+	fill: #cd2653;
+}
+.assessment-block .assessment-check.red ~ span {
+	text-decoration: line-through;
+}
+.assessment-block .assessment-check:focus {
+    outline: none;
+}
+@media (max-width: 800px) {
+    .assessment-block:nth-child(odd) {
+        margin-right: 0;
+    }
+}
+@media (max-width: 551px) {
+    .assessment-block p span {
+        font-size: 16px;
+    }
+    .assessment-block .assessment-check svg {
+        width: 30px;
+        height: 30px;
+        max-width: 40px;
+    }
+}

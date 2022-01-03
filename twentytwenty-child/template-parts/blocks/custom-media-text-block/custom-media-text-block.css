@@ -1,0 +1,179 @@
+.custom-media-text-block.alignfull {
+    position: relative;
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.custom-media-text-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.custom-media-text-column {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    max-width: 50%;
+}
+.custom-media-text-column:last-child {
+    margin-left: 1.5rem;
+}
+.custom-media-image {
+    height: 100%;
+    background-color: #e1e1e1;
+}
+.custom-media-image img {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.custom-media-text h3 {
+    font-weight: 400;
+    margin: 0 0 1.5rem;
+    max-width: 55rem;
+}
+.custom-media-text h3, 
+.custom-media-text p,
+.custom-media-text ul li {
+    color: #fff;
+}
+
+.custom-media-text p {
+    margin-bottom: 5rem;
+    font-weight: 200;
+}
+.custom-media-text ul li {
+    font-weight: 200;
+}
+.custom-media-text p strong,
+.custom-media-text p b {
+    font-weight: 700;
+}
+
+.custom-media-text {
+    padding: 8rem 3rem 8rem 3rem;
+}
+.custom-media-text.v-align-center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.custom-media-text-block[data-content-overlay] {
+    display: block;
+    position: relative;
+}
+.custom-media-text-block[data-content-overlay] .custom-media-text-column {
+    max-width: 100%;
+}
+.custom-media-text-block[data-content-overlay] .custom-media-text h3 {
+    max-width: 100%;
+}
+.custom-media-text-block[data-content-overlay] .custom-media-text h3 span {
+    line-height: 0.8;
+    text-decoration: underline;
+    text-decoration-thickness: from-font;
+    text-underline-offset: 3px;
+}
+.custom-media-text-block[data-content-overlay] .custom-media-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 0 3rem;
+    text-align: center;
+}
+.custom-media-text-block[data-content-overlay] .custom-media-text p {
+    margin-bottom: 1em;
+    min-height: 5rem;
+}
+
+.custom-media-text--wrapper ul {
+    text-align: left;
+}
+@media (min-width: 1201px) {
+    .custom-media-text {
+        padding-left: 6rem;
+        padding-right: 11rem;
+    }
+}
+@media (min-width: 1000px) {
+    .custom-media-text-block.swap .custom-media-text-column:first-child {
+        -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2;
+    }
+    
+    .custom-media-text-block.swap .custom-media-text-column:last-child {
+        margin-left: 0;
+        margin-right: 1.5rem;
+    }
+    .custom-media-text-block.swap .custom-media-text.v-align-center {
+        -webkit-box-align: end;
+        -ms-flex-align: end;
+        align-items: flex-end;
+    }
+    .custom-media-text--wrapper {
+        max-width: 47rem;
+    }
+}
+@media (max-width: 999px) {
+    .custom-media-text-block {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+    .custom-media-text-column {
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+        max-width: 100%;
+    }
+    .custom-media-text h3 {
+        max-width: 100%;
+    }
+    .custom-media-text {
+        text-align: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    .custom-media-text-column:last-child {
+        margin-left: 0px;
+        margin-top: 1.5rem;
+    }
+    .custom-media-text-block[data-content-overlay] .custom-media-text-column:last-child {
+        margin-top: 0;
+    }
+    .custom-media-text h3 {
+        font-size: 4.2rem !important;
+    }
+    .custom-media-text-block[data-content-overlay] .custom-media-text h3 {
+        font-size: 3.6rem !important;
+    }
+}

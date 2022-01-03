@@ -1,0 +1,44 @@
+.dealer--login {
+    border-right: 1px solid #e0e3e9;
+}
+
+.dealer--login .gform_wrapper {
+    max-width: 370px;
+}
+
+.dealer--login .gform_wrapper input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="button"]):not([type="image"]):not([type="file"]) {
+    padding: 1.5rem 1.8rem;
+    font-size: 1.6rem;  
+    border-color: #dbdbdb; 
+}
+
+.dealer--login .gform_wrapper .top_label .gfield_label, .dealer--login .gform_wrapper legend.gfield_label {
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+.dealer--login .gform_wrapper .gform_footer input.button, .gform_wrapper .gform_footer input[type="submit"], 
+.dealer--login .gform_wrapper .gform_page_footer input.button, 
+.dealer--login .gform_wrapper .gform_page_footer input[type="submit"] {
+    max-width: 270px;
+    width: 100%;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.dealer--login .gform_wrapper .gform_footer input.button, .gform_wrapper .gform_footer input[type="submit"]:hover, 
+.dealer--login .gform_wrapper .gform_page_footer input.button:hover, 
+.dealer--login .gform_wrapper .gform_page_footer input[type="submit"]:hover {
+    opacity: .9;
+    text-decoration: none;
+}
+
+.dealer--login .gform_wrapper li.hidden_label input {
+    margin-top: 0;
+}
+
+.gform_wrapper.gf_browser_chrome .gfield_checkbox li input, .gform_wrapper.gf_browser_chrome .gfield_checkbox li input[type=checkbox], .gform_wrapper.gf_browser_chrome .gfield_radio li input[type=radio] {
+    margin-top: 0!important;
+}

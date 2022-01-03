@@ -1,0 +1,143 @@
+.gallery-block.alignwide {
+    width: 100%;
+    max-width: 130rem;
+}
+.gallery-block-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 8rem;
+}
+
+.gallery-block-wrapper .gallery-block--card {
+    padding: 0 1.5rem;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    max-width: 100%;
+}
+.gallery-block-wrapper.column-4 .gallery-block--card {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+    max-width: 25%;
+}
+.gallery-block-wrapper.column-5 .gallery-block--card {
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
+    max-width: 20%;
+}
+.gallery-block-wrapper.column-6 .gallery-block--card {
+    -ms-flex-preferred-size: 16.6667%;
+        flex-basis: 16.6667%;
+    max-width: 16.6667%;
+}
+
+.gallery-block-wrapper.column-7 .gallery-block--card {
+    -ms-flex-preferred-size: 14.286%;
+        flex-basis: 14.286%;
+    max-width: 14.286%;
+}
+.gallery-block-wrapper.column-8 .gallery-block--card {
+    -ms-flex-preferred-size: 12.5%;
+        flex-basis: 12.5%;
+    max-width: 12.5%;
+}
+
+[data-slider] .gallery-block-wrapper .flickity-prev-next-button.previous {
+    left: -3rem;
+}
+[data-slider] .gallery-block-wrapper .flickity-prev-next-button.next {
+    right: -3rem;
+}
+@media (max-width: 1000px) {
+    .gallery-block-wrapper.column-4 .gallery-block--card,
+    .gallery-block-wrapper.column-5 .gallery-block--card,
+    .gallery-block-wrapper.column-5 .gallery-block--card,
+    .gallery-block-wrapper.column-6 .gallery-block--card,
+    .gallery-block-wrapper.column-7 .gallery-block--card,
+    .gallery-block-wrapper.column-8 .gallery-block--card,
+    .gallery-block-wrapper .gallery-block--card {
+        -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1;
+        -ms-flex-negative: 1;
+            flex-shrink: 1;
+        -ms-flex-preferred-size: 25%;
+            flex-basis: 25%;
+        max-width: 25%;
+    }
+    [data-slider] .gallery-block-wrapper.column-4 .gallery-block--card,
+    [data-slider] .gallery-block-wrapper.column-5 .gallery-block--card,
+    [data-slider] .gallery-block-wrapper.column-5 .gallery-block--card,
+    [data-slider] .gallery-block-wrapper.column-6 .gallery-block--card,
+    [data-slider] .gallery-block-wrapper.column-7 .gallery-block--card,
+    [data-slider] .gallery-block-wrapper.column-8 .gallery-block--card,
+    [data-slider] .gallery-block-wrapper .gallery-block--card {
+        width: 200px;
+        height: 150px;
+    }
+
+    [data-slider] .gallery-block-wrapper {
+        display: block;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 551px) {
+    .gallery-block-wrapper {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+    .gallery-block-wrapper.column-4 .gallery-block--card,
+    .gallery-block-wrapper.column-5 .gallery-block--card,
+    .gallery-block-wrapper.column-5 .gallery-block--card,
+    .gallery-block-wrapper.column-6 .gallery-block--card,
+    .gallery-block-wrapper.column-7 .gallery-block--card,
+    .gallery-block-wrapper.column-8 .gallery-block--card,
+    .gallery-block-wrapper .gallery-block--card {
+        -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1;
+        -ms-flex-negative: 1;
+            flex-shrink: 1;
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
+        max-width: 50%;
+    }
+    .gallery-block-wrapper .gallery-block--card {
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
+        max-width: 50%;
+    }
+
+    [data-slider] .gallery-block-wrapper.column-4 .gallery-block--card,
+    [data-slider] .gallery-block-wrapper.column-5 .gallery-block--card,
+    [data-slider] .gallery-block-wrapper.column-5 .gallery-block--card,
+    [data-slider] .gallery-block-wrapper.column-6 .gallery-block--card,
+    [data-slider] .gallery-block-wrapper.column-7 .gallery-block--card,
+    [data-slider] .gallery-block-wrapper.column-8 .gallery-block--card,
+    [data-slider] .gallery-block-wrapper .gallery-block--card {
+        width: 200px;
+        height: 100px;
+    }
+
+    [data-slider] .gallery-block-wrapper .gallery-block--card img {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+           object-fit: cover;
+    }
+}

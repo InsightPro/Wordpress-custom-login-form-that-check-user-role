@@ -1,0 +1,263 @@
+.scents-block .alignwide {
+    width: 100%;
+}
+
+.scents-block--tab-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.scents-block--tab-navList {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+    max-width: 25%;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+    padding: 0 23px;
+}
+
+.scents-block--tab-navList h3 {
+    font-size: 2rem;
+    font-family: var(--body-font);
+    color: var(--theme-black-color);
+    font-weight: 900;
+    display: block;
+    padding-bottom: 2rem;
+    border-bottom: 3px solid;
+}
+@media (min-width: 768px) {
+    .scents-block--tab-navList h3.fruit {
+        border-bottom-color: #007E41;
+    }
+    
+    .scents-block--tab-navList h3.sweet {
+        border-bottom-color: #D9AEA7;
+    }
+    
+    .scents-block--tab-navList h3.floral {
+        border-bottom-color: #C491C1;
+    }
+    
+    .scents-block--tab-navList h3.earthy {
+        border-bottom-color: #99877B;
+    }
+}
+
+
+.scents-block--list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.scents-block--list li:not(.dot) {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+    max-width: 50%;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    margin: 0 0 15px;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    font-size: 1.5rem;
+    color: var(--theme-black-color);
+    padding: 8px 0;
+    cursor: pointer;
+}
+
+.scents-block--list li:not(.dot):hover,
+.scents-block--list li:not(.dot):focus,
+.scents-block--list li:not(.dot):active,
+.scents-block--list li:not(.dot).active {
+    border-color: #007E41;
+}
+
+.scents-block--list li:not(.dot):hover {
+    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.16);
+            box-shadow: 0 3px 6px rgba(0,0,0,.16);
+    border-color: transparent;
+}
+
+.scents-block--list li:not(.dot) img {
+    display: block;
+    margin: 0 auto 1.5rem;
+    height: 8.4rem;
+}
+
+.scents-block--tab-single {
+    display: none;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: 2rem;
+}
+.scents-block--tab-single.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.scents-block--tab-single .col {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+    -ms-flex-preferred-size: 33.3333%;
+        flex-basis: 33.3333%;
+    padding: 0 1.5rem;
+}
+
+.scents-block--tab-single-superHeading {
+    font-size: 2rem;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.scents-block--tab-single-heading {
+    font-size: 4.2rem;
+    margin: 0 0 4rem;
+}
+
+.scents-block--tab-single-content {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.scents-block--tab-nav-heading-lists {
+    display: none;
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    .scents-block--tab-navList {
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
+        max-width: 50%;
+    }
+    .scents-block--list li:not(.dot) {
+        max-width: 33.3333%;
+        -ms-flex-preferred-size: 33.3333%;
+            flex-basis: 33.3333%;
+    }
+
+    .scents-block--tab-single-heading {
+        font-size: 3.2rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .scents-block--tab-navList h3 {
+        display: none;
+    }
+    .scents-block--tab-nav {
+        display: block;
+    }
+    .mobile-scroll {
+        overflow-x: auto;
+    }
+    .scents-block--tab-nav-heading-lists {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: block;
+        width: 900px;
+    }
+    .scents-block--tab-nav-heading-lists li {
+        display: inline-block;
+        width: 17.8rem;
+        height: 3.8rem;
+        line-height: 3.2rem;
+        border: 1px solid #E1E1E1;
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: #C1C1C1;
+        text-align: center;
+        -webkit-box-shadow: 0 2px 6px rgba(0,0,0,.11);
+                box-shadow: 0 2px 6px rgba(0,0,0,.11);
+        margin-bottom: 3rem;
+    }
+    .scents-block--tab-nav-heading-lists li.active.fruit {
+        color: #007E41;
+        border-color: #007E41;
+    }
+    .scents-block--tab-nav-heading-lists li.active.sweet {
+        color: #D9AEA7;
+        border-color: #D9AEA7;
+    }
+    .scents-block--tab-nav-heading-lists li.active.floral {
+        color: #C491C1;
+        border-color: #C491C1;
+    }
+    .scents-block--tab-nav-heading-lists li.active.earthy {
+        color: #99877B;
+        border-color: #99877B;
+    }
+
+    .scents-block--tab-navList {
+        display: none;
+    }
+    .scents-block--tab-navList.active {
+        display: block;
+        overflow-x: auto;
+    }
+
+    .scents-block--list {
+        width: 700px;
+    }
+
+    .scents-block--tab-single .col,
+    .scents-block--tab-navList {
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+        max-width: 100%;
+    }
+    .scents-block--list li:not(.dot) {
+        -ms-flex-preferred-size: auto;
+            flex-basis: auto;
+        max-width: 12rem;
+        width: 100%;
+    }
+    .scents-block--list .flickity-page-dots {
+        display: none;
+    }
+    .scents-block--tab-single .col:first-child {
+        -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2;
+    }
+    .scents-block--tab-single .col:last-child {
+        -webkit-box-ordinal-group: 4;
+            -ms-flex-order: 3;
+                order: 3;
+    } 
+    .scents-block--tab-single-heading {
+        font-size: 36px;
+    }
+
+    .scents-block--tab-single-superHeading {
+        margin-bottom: 5px;
+    }
+    .scents-block--tab-single-heading {
+        margin-bottom: 20px;
+    }
+    .scents-block--tab-single-content {
+        margin-bottom: 40px;
+    }
+}

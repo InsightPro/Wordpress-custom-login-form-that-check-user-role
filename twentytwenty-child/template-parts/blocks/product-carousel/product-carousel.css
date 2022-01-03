@@ -1,0 +1,41 @@
+.single-slide {
+    width: 100%;
+    max-width: 30rem;
+    padding: 1.5rem;
+    min-height: 46rem;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+    -webkit-box-align: stretch;
+	-ms-flex-align: stretch;
+    align-items: stretch;
+}
+.single-slide .bc-product-card {
+    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.16);
+    box-shadow: 0 3px 6px rgba(0,0,0,.16);
+    overflow: hidden;
+    margin: 0;
+	padding: 2rem 1.5rem;
+}
+
+
+.product-slider .flickity-prev-next-button {
+    width: 6rem;
+    height: 6rem;
+    background-color: rgba(0,0,0,.3) !important;
+    border-radius: 50%;
+    display: none;
+}
+.product-slider .flickity-prev-next-button:hover,
+.product-slider .flickity-prev-next-button:focus,
+.product-slider .flickity-prev-next-button:active {
+    background-color: rgba(0,0,0,1) !important;
+}
+
+.product-slider .flickity-prev-next-button .flickity-button-icon {
+    fill: #fff;
+}
+
+.product-slider:hover .flickity-prev-next-button {
+    display: block;
+}
